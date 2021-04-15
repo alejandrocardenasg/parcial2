@@ -1,0 +1,15 @@
+$ORIGIN 100.168.192.in-addr.arpa.
+$TTL 3H
+@       IN SOA  servidor3.gxt.com. root@gxt.com. (
+                                        4       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+@       IN      NS      servidor3.gxt.com.
+
+;host en la zona
+
+3       IN      PTR     servidor3.gxt.com.
+2	IN	PTR	servidor2.gxt.com.
+4	IN	PTR	firewall.gxt.com.
