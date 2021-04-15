@@ -1,0 +1,16 @@
+#
+# Shorewall -- /etc/shorewall/interfaces
+#
+# For information about entries in this file, type "man shorewall-interfaces"
+#
+# The manpage is also online at
+# https://shorewall.org/manpages/shorewall-interfaces.html
+#
+?FORMAT 2
+###############################################################################
+#ZONE		INTERFACE		OPTIONS
+#routebback permitir el reenvio o el enrutamiento de regreso
+#nosmurfs detectar la red de difusión de la interfaz
+net	eth0	dhcp,routeback,nosmurfs
+loc	eth1	dhcp,routeback,nosmurfs
+dmz	eth2	dhcp,routeback,nosmurfs

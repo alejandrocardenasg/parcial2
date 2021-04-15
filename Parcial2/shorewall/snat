@@ -1,0 +1,20 @@
+#
+# Shorewall -- /etc/shorewall/snat
+#
+# For information about entries in this file, type "man shorewall-snat"
+#
+# See https://shorewall.org/manpages/shorewall-snat.html for more information
+#
+?FORMAT 2
+###################################################################################################################################################
+#ACTION			SOURCE			DEST		PROTO	DPORT	SPORT	IPSEC	MARK	USER	SWITCH	ORIGDEST	PROBABILITY
+#
+# Rules generated from masq file /etc/shorewall/masq by Shorewall 5.2.8 - Tue Apr 13 00:14:24 UTC 2021
+#
+SNAT(192.168.100.5)	192.168.100.0/24	eth0
+MASQUERADE	10.0.2.0/24	eth0
+#
+# Rules generated from masq file /etc/shorewall/masq by Shorewall 5.2.8 - Tue Apr 13 01:44:25 UTC 2021
+#
+SNAT(192.168.100.5)	192.168.100.0/24	eth0
+MASQUERADE	10.0.2.0/24	eth0
